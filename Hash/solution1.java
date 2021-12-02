@@ -18,17 +18,18 @@ class solution1 {
         }
 
         for (String key : hMap.keySet()) {
-            if (hMap.get(key) == 1)
+            if (hMap.get(key) == 1) {
                 answer = key;
-            break;
+                break;
+            }
         }
 
         return answer;
     }
 
     public static void main(String[] args) {
-        String[] part = { "leo", "kiki", "eden" };
-        String[] comp = { "eden", "kiki" };
+        String[] part = { "marina", "josipa", "nikola", "vinko", "filipa" };
+        String[] comp = { "josipa", "filipa", "marina", "nikola" };
         solution1 sol = new solution1();
         System.out.println(sol.solution(part, comp));
     }
