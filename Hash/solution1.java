@@ -12,10 +12,14 @@ class solution1 {
             hMap.put(i, hMap.getOrDefault(i, 0) + 1);
         }
 
+        System.out.println(hMap);
+
         // 완주자를 hMap에서 빼기
         for (String i : completion) {
             hMap.put(i, hMap.get(i) - 1);
         }
+
+        System.out.println(hMap);
 
         for (String key : hMap.keySet()) {
             if (hMap.get(key) == 1) {
