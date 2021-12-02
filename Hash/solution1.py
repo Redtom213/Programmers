@@ -18,5 +18,7 @@ def solution(participant, completion):
     return answer
 
 
-print(solution(["marina", "josipa", "nikola", "vinko", "filipa"], [
-      "josipa", "filipa", "marina", "nikola"]))
+participant = ["marina", "josipa", "nikola", "vinko", "filipa"]
+completion = ["josipa", "filipa", "marina", "nikola"]
+
+print(solution(participant, completion))
